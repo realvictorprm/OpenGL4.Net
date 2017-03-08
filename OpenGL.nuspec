@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>0.9</version>
+    <title>Modern, object oriented OpenGL4 bindings for .Net</title>
+    <authors>realvictorprm</authors>
+    <owners>realvictorprm</owners>
+    <licenseUrl>https://github.com/realvictorprm/opengl4csharp/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/realvictorprm/opengl4csharp</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Opengl-logo.svg/512px-Opengl-logo.svg.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Providing modern object oriented OpenGL4 bindings for .Net. All credit goes to giava. If there are any bugs contact me. I'll fix them and going on with maintaining the code.</description>
+    <releaseNotes>Initial release of the nuget package.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>OOP OpenGL4</tags>
+  </metadata>
+</package>

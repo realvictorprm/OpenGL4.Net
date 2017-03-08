@@ -1,6 +1,6 @@
 This is original from https://github.com/giawa/opengl4csharp. Because the other seems to be away and or really busy I'm going on with maintaining and cleaning this. However extending this with additional functionallity is also planned. If there any issue please post them here! 
 
-# OpenGL 4 for C#/.NET
+# OpenGL 4 for .NET languages
 
 This code started as a limited subset of the Open Toolkit bindings to OpenGL, but has evolved to include the latest functionality by parsing the OpenGL man pages directly.  I have kept only the methods that are OpenGL 4+ compatible, meaning that any legacy fixed function pipeline methods have been removed.  I've also removed several enums and other code that dealt with supporting the fixed function pipeline.
 

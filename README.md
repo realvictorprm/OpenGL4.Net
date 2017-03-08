@@ -1,18 +1,17 @@
+This is original from https://github.com/giawa/opengl4csharp. Because the other seems to be away and or really busy I'm going on with maintaining and cleaning this. However extending this with additional functionallity is also planned. If there any issue please post them here! 
+
 # OpenGL 4 for C#/.NET
-[![Build Status](https://travis-ci.org/giawa/opengl4csharp.svg?branch=master)](https://travis-ci.org/giawa/opengl4csharp)
 
 This code started as a limited subset of the Open Toolkit bindings to OpenGL, but has evolved to include the latest functionality by parsing the OpenGL man pages directly.  I have kept only the methods that are OpenGL 4+ compatible, meaning that any legacy fixed function pipeline methods have been removed.  I've also removed several enums and other code that dealt with supporting the fixed function pipeline.
 
-Similar to the Open Toolkit bindings, these bindings work on Windows, Mac OS X and Linux (under the Mono framework).
+Similar to the Open Toolkit bindings, these bindings work on Windows, Mac OS X and Linux (under the Mono framework). 
 
-This library also includes some common Math libraries, taken from my own graphics engine that I was developing.  These include Bounding Box (AABB and OBB), Frustum, Matrix4, Plane, Quaternion, Ray, Vector2, Vector3 and Vector4.  The class library also supports some common OpenGL constructs such as Frame Buffer Objects (FBO), Shader Programs (vertex, fragment and geometry), Textures, Vertex Array Objects (VAO) and Vertex Buffer Objects (VBO).
-
-Random History:  This code was written to help my friend with his Masters thesis, as he was wanting to do work with GLSL and OpenGL.  I wrote up these OpenGL 4 bindings over the course of two weeks in 2011 and they were never used.  It is about time someone got to play with them!  I'm also working on a [Voxel Engine](http://www.giawa.com) using this library, which is largely open source.
+This library also includes some common Math libraries, taken from my the graphics engine by Giawa.  These include Bounding Box (AABB and OBB), Frustum, Matrix4, Plane, Quaternion, Ray, Vector2, Vector3 and Vector4.  The class library also supports some common OpenGL constructs such as Frame Buffer Objects (FBO), Shader Programs (vertex, fragment and geometry), Textures, Vertex Array Objects (VAO) and Vertex Buffer Objects (VBO).
 
 Note:  To use this library you will need a valid OpenGL context.  You can get this using FreeGLUT, or some equivalent.
 
 ## License
-Check the included [LICENSE.md](https://github.com/giawa/opengl4csharp/blob/master/LICENSE.md) file for the license associated with this code.
+Check the included [LICENSE.md](https://github.com/realvictorprm/OpenGL4.Net/edit/master/LICENSE.md) file for the license associated with this code. In conclusion the library is licensed under MIT but may include the copyright notices.
 
 ## Building the Project
 This project includes a .sln and .csproj file which will create an OpenGL class library.  This library includes a dll.config which will load the correct OpenGL on Windows, Mac OS X and Windows.  So, you need only compile this project once and it will work across platforms.
@@ -145,16 +144,3 @@ This is an example of creating a quad using a VBO for vertices (Vector3 data), a
 ### A Note on System.Numerics and SIMD Support
 
 The OpenGL library can now use System.Numerics for Vector2, Vector3, Vector4 and Quaternion, which can provide performance improvements by utilizing SIMD.  To enable System.Numerics support you must compile with the USE_NUMERICS option.  Make sure to add System.Numerics as a reference to your project, and then use Vector3/etc as normal.
-
-## Extensions of OpenGL 4 for C*#*
-
-### OpenGL.Platform
-
-OpenGL.Platform is an optional class library that can be included in your projects.  The class library helps to create and manager an SDL window and OpenGL context.  The class library also supports some helpful functionality such as input handling, vertical sync and more.
-
-### [OpenGL.UI](https://github.com/giawa/gui4opengl4csharp)
-
-OpenGL.UI provides several basic user interface components.  OpenGL.UI relies upon OpenGL.Platform for input handling.  Several example projects are included and are mentioned in the project [README](https://github.com/giawa/gui4opengl4csharp/blob/master/README.md).
-
-## Further Reading
-There isn't much documentation for this project at this time.  The source code for both the math and constructs is quite well documented.  I have also compiled [OpenGL 4 for C#/.NET Tutorials](https://github.com/giawa/opengl4tutorials) which reference this library.
